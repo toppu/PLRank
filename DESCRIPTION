@@ -1,0 +1,11 @@
+Package: PLRank
+Title: Probabilistic ranking methods based on Plackett-Luce model: Inference
+    and Evaluation
+Version: 0.1
+Authors: "Suttipong Mungkala <suttipong.mungkala@usi.ch>"
+Description: This packages implements Maximum Likelihood methods for inferring
+    the parameters of a Plackett-Luce ranking model.
+Depends:
+    R (>= 3.0.3)
+License: GPL (>=2)
+LazyData: true
