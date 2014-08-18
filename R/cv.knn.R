@@ -217,7 +217,7 @@ for (run in 1:nbRuns) {
   
 } #end cross validation
 
-result <- list("pl1_ta"=mean(pl1_ta_cv_avg[which(pl1_ta_cv_avg!=3333)]), 
+r <- list("pl1_ta"=mean(pl1_ta_cv_avg[which(pl1_ta_cv_avg!=3333)]), 
                "pl2_ta"=mean(pl2_ta_cv_avg[which(pl2_ta_cv_avg!=3333)]), 
                "pl3_ta"=mean(pl3_ta_cv_avg[which(pl3_ta_cv_avg!=3333)]),
                "pl1_ta_cv"=pl1_ta_cv_avg,
@@ -233,6 +233,8 @@ result <- list("pl1_ta"=mean(pl1_ta_cv_avg[which(pl1_ta_cv_avg!=3333)]),
                "pl2_ll"=mean(pl2_ll_avg[which(pl2_ll_avg!=3333)]), 
                "pl3_ll"=mean(pl3_ll_avg[which(pl3_ll_avg!=3333)]), 
                "pl_h"=pl_h)
+
+  return (r)
 
 }
 
