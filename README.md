@@ -47,6 +47,34 @@ Hereafter, we assume that PLRank package is already installed and
 loaded in the current R session, for example by entering the following
 command:
 
+R> library("PLRank")
+        
+
+Function Generating 1-Vase Artificial Dataset
+---------------------------------------------
+
+We start by creating an artificail dataset from PL1 model. This is
+useful for performing inference tasks for ranking problems. Figure
+\ref{fig:R-genrank1V}, $\$rank$ is the rankings randomly drawn from the
+known parameters $\$para$
+
+    #Usage
+    genRank1v(nLabels, nObs)
+
+    #Arguments
+    nLabels number of labels to rank
+    nObs number of observations
+
+    #Examples
+    Create artificial dataset with 4 labels to rank and 10 instances
+    R> lables = 4
+    R> observations = 10
+    R> genRank1v(lables, observations)
+        
+
+\centering![Sample of 1-vase artificial dataset.<span
+data-label="fig:R-genrank1V"></span>][]
+
 [^1]: https://github.com/toppu/PLRank
 
 [^2]: http://cran.r-project.org/web/packages/pmr/index.html
