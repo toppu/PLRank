@@ -1,8 +1,6 @@
-PLRank: An R Package for Label Ranking
-======================================
+# PLRank: An R Package for Label Ranking
 
-PLRank overview
----------------
+## PLRank overview
 
 PLRank is a collection of general purpose functions that provide a flexible set of
 tools for applying a wide range of label ranking methods based on
@@ -37,8 +35,7 @@ label ranking tasks and sample of datasets:
 -   Evaluation methods for label ranking problems. Calculate a variety
     of evaluation measures through k-folds cross validation.
 
-Using PLRank
-------------
+## Using PLRank
 
 Many examples concerning optimization tasks are provided in this
 section. In particular, we will present the optimization of well-known
@@ -47,26 +44,24 @@ Hereafter, we assume that PLRank package is already installed and
 loaded in the current R session, for example by entering the following
 command:
 
-R> library("PLRank")
+    R> library("PLRank")
         
 
-Function Generating 1-Vase Artificial Dataset
----------------------------------------------
+### Function Generating 1-Vase Artificial Dataset
 
 We start by creating an artificail dataset from PL1 model. This is
 useful for performing inference tasks for ranking problems. Figure
 \ref{fig:R-genrank1V}, $\$rank$ is the rankings randomly drawn from the
 known parameters $\$para$
 
-    #Usage
+Usage:
     genRank1v(nLabels, nObs)
 
-    #Arguments
+Arguments:
     nLabels number of labels to rank
     nObs number of observations
 
-    #Examples
-    Create artificial dataset with 4 labels to rank and 10 instances
+Example: create artificial dataset with 4 labels to rank and 10 instances
     R> lables = 4
     R> observations = 10
     R> genRank1v(lables, observations)
