@@ -35,6 +35,8 @@ label ranking tasks and sample of datasets:
 -   Evaluation methods for label ranking problems. Calculate a variety
     of evaluation measures through k-folds cross validation.
 
+![R-genrank1V](https://github.com/toppu/PLRank/blob/master/images/PLRank_help.png)
+
 ## Using PLRank
 
 Many examples concerning optimization tasks are provided in this
@@ -45,7 +47,6 @@ loaded in the current R session, for example by entering the following
 command:
 
     R> library("PLRank")
-        
 
 ### Function Generating 1-Vase Artificial Dataset
 
@@ -55,26 +56,41 @@ useful for performing inference tasks for ranking problems. Figure
 known parameters $\$para$
 
 Usage:
+
     genRank1v(nLabels, nObs)
 
 Arguments:
+
     nLabels number of labels to rank
     nObs number of observations
 
 Example: create artificial dataset with 4 labels to rank and 10 instances
+
     R> lables = 4
     R> observations = 10
     R> genRank1v(lables, observations)
-        
+    
+![R-genrank1V]https://github.com/toppu/PLRank/blob/master/images/R-genrank1V.png
 
-\centering![Sample of 1-vase artificial dataset.<span
-data-label="fig:R-genrank1V"></span>][]
 
-[^1]: https://github.com/toppu/PLRank
+### Function Generating 2-vase Artificial Dataset
 
-[^2]: http://cran.r-project.org/web/packages/pmr/index.html
+Creating an artificial dataset from PL2 model.Figure
+\ref{fig:R-genrank2V}, $\$rank$ is the rankings randomly drawn from the
+known parameters $\$para1$ and $\$para2$, where the split point is
+defined at the second position.
 
-[^3]: https://www.uni-marburg.de/fb12/kebi/research/repository/labelrankingdata
+    #Usage
+    genRank2v(nLabels, nObs, L)
 
-  [Screenshot of PLRank.<span data-label="fig:ibplta"></span>]: ./figures/PLRank_help.png
-    "fig:"
+    #Arguments
+    nLabels number of labels to rank
+    nObs number of observations
+    L split position between the first vase and the second vase
+
+    #Examples
+    Create artificial dataset with 4 labels to rank and 10 instances
+    R> lables = 4
+    R> observations = 10
+    R> L = 2
+    R> genRank2v(lables, observations, L)
