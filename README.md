@@ -6,7 +6,7 @@ PLRank is a collection of general purpose functions that provide a flexible set 
 tools for applying a wide range of label ranking methods based on
 Plackett-Luce model. PLRank includes evaluation
 methods, datasets and new algorithms I developed in my master thesis,
-"Generalized Plackett-Luce Model for Label Ranking", under the direction of [Dr.Giorgio Corani](http://people.idsia.ch/~giorgio/) and [Dr.Alessandro Antonucci](http://people.idsia.ch/~alessandro/)
+"[Generalized Plackett-Luce Model for Label Ranking](https://github.com/toppu/PLRank/blob/master/msThesis_SuttipongMungkala_20150120.pdf)", under the direction of [Dr.Giorgio Corani](http://people.idsia.ch/~giorgio/) and [Dr.Alessandro Antonucci](http://people.idsia.ch/~alessandro/)
 from the [Swiss AI Lab IDSIA](http://ipg.idsia.ch/). Label
 ranking datasets in PLRank consist of training examples of a target
 function that has multiple binary target variables. In other words, each
@@ -35,7 +35,7 @@ label ranking tasks and sample of datasets:
 -   Evaluation methods for label ranking problems. Calculate a variety
     of evaluation measures through k-folds cross validation.
 
-![R-genrank1V](https://github.com/toppu/PLRank/blob/master/images/PLRank_help.png)
+![R-PLRank_help](https://github.com/toppu/PLRank/blob/master/images/PLRank_help.png)
 
 ## Using PLRank
 
@@ -70,7 +70,7 @@ Example: create artificial dataset with 4 labels to rank and 10 instances
     R> observations = 10
     R> genRank1v(lables, observations)
     
-![R-genrank1V]https://github.com/toppu/PLRank/blob/master/images/R-genrank1V.png
+![R-genrank1V](https://github.com/toppu/PLRank/blob/master/images/R-genrank1V.png)
 
 
 ### Function Generating 2-vase Artificial Dataset
